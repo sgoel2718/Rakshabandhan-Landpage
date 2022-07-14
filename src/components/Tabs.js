@@ -57,7 +57,7 @@ export default function ScrollableTabsButtonAuto() {
 								/>
 							</CardActionArea>
 						</Card>
-						<p>RAKHI</p>
+						<h>RAKHI</h>
 					</Stack>
 					<Stack
 						direction="column"

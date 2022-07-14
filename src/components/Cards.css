@@ -11,6 +11,9 @@ Button {
     right: 0;
 }
 
-img{
+
+
+.im{
     width: 100%;
+    height: 800px;
 }

@@ -162,7 +162,7 @@ export default function Footer() {
 								<Box>CUSTOMER CARE</Box>
 								<Box>
 									<Link
-										sx={{ textDecoration: "none" }}
+										sx={{ textDecoration: "none", cursor: "pointer" }}
 										href="/"
 										color="inherit"
 									>

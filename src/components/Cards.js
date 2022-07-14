@@ -35,6 +35,7 @@ import sl3 from "./sl3.jfif";
 import sl4 from "./sl4.jpg";
 import sl5 from "./sl5.jpg";
 import sl6 from "./sl6.jfif";
+import home from "./home.jfif";
 import "./Cards.css";
 import Footer from "./Footer";
 
@@ -482,13 +483,15 @@ export default function MultiActionAreaCard() {
 						</CardActions>
 					</Card>
 				</Stack>
+
+				<img className="im" src={home} alt="home-decor"></img>
 				<Stack
 					direction="row"
 					spacing={2}
 					paddingLeft="50px"
 					paddingRight="50px"
 				>
-					<h4>Rakhi and Rakhi Gifts</h4>
+					<h4>Home Decoration</h4>
 					<Button
 						size="small"
 						color="primary"
@@ -631,14 +634,13 @@ export default function MultiActionAreaCard() {
 					</Card>
 				</Stack>
 
-				<img sx={{ maxWidth: 100 }} src={rakhi} alt="rakhi" />
 				<Stack
 					direction="row"
 					spacing={2}
 					paddingLeft="50px"
 					paddingRight="50px"
 				>
-					<h4>Rakhi and Rakhi Gifts</h4>
+					<h4>Salt Lamps</h4>
 					<Button
 						size="small"
 						color="primary"
