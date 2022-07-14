@@ -1,0 +1,16 @@
+#test {
+    text-align: center;
+}
+
+Card {
+    height: 200px;
+}
+
+Button {
+    position: absolute;
+    right: 0;
+}
+
+img{
+    width: 100%;
+}
