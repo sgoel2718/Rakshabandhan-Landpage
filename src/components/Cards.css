@@ -11,9 +11,23 @@ Button {
     right: 0;
 }
 
+.hh {
+    position: absolute;
+    color: whitesmoke;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
 
+.h {
+    position: absolute;
+    color: whitesmoke;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+}
 
-.im{
+.imm{
     width: 100%;
     height: 800px;
 }

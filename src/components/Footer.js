@@ -162,7 +162,7 @@ export default function Footer() {
 								<Box>CUSTOMER CARE</Box>
 								<Box>
 									<Link
-										sx={{ textDecoration: "none", cursor: "pointer" }}
+										sx={{ textDecoration: "none" }}
 										href="/"
 										color="inherit"
 									>
@@ -183,8 +183,10 @@ export default function Footer() {
 					</Grid>
 				</Container>
 				<Stack direction="row" spacing={2}>
-					<img src={gp} alt="google play"></img>
-					<img src={ap} alt="app store"></img>
+					{/* <img  src={gp} alt="google play"></img>
+					<img src={ap} alt="app store"></img> */}
+					<Box component="img" src={gp} alt="google play"></Box>
+					<Box component="img" src={ap} alt="app store"></Box>
 					<Box>MOBIKASA VENTURES LLP</Box>
 					<Box sx={{ display: "flex", flexDirection: "row-reverse" }}>
 						© 2022, All Rights Reserved.

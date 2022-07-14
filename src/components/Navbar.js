@@ -20,6 +20,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Stack } from "@mui/material";
 
 const pages = ["Shop", "Home decor", "Festive decor", "Corporate Gifting"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -139,17 +140,19 @@ const ResponsiveAppBar = () => {
 							</Button>
 						))}
 					</Box>
-					<Search>
-						<SearchIconWrapper>
-							<SearchIcon />
-						</SearchIconWrapper>
-						<StyledInputBase
-							placeholder="Search…"
-							inputProps={{ "aria-label": "search" }}
-						/>
-					</Search>
-					<ShoppingCartOutlinedIcon sx={{ color: "whitesmoke" }} />
-					<p>Cart</p>
+					<Stack direction="row" spacing={2}>
+						<Search>
+							<SearchIconWrapper>
+								<SearchIcon />
+							</SearchIconWrapper>
+							<StyledInputBase
+								placeholder="Search…"
+								inputProps={{ "aria-label": "search" }}
+							/>
+						</Search>
+						<ShoppingCartOutlinedIcon sx={{ color: "whitesmoke" }} />
+						<p>Cart</p>
+					</Stack>
 
 					<FontAwesomeIcon icon="fab fa-whatsapp" />
 				</Toolbar>
