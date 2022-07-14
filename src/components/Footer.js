@@ -3,23 +3,14 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
-import { Stack } from "@mui/material";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormHelperText from "@mui/material/FormHelperText";
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
-import { useState } from "react";
+import { Stack, Typography } from "@mui/material";
 import gp from "./gp.png";
 import ap from "./ap.png";
 import "./Footer.css";
+import Dropdown from "react-bootstrap/Dropdown";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Footer() {
-	const [country, setCountry] = React.useState("");
-
-	const handleChange = (event) => {
-		setCountry(event.target.value);
-	};
 	return (
 		<footer>
 			<Box
@@ -28,7 +19,7 @@ export default function Footer() {
 				bgcolor="#1976D2"
 				color="white"
 			>
-				<Container maxWidth="lg">
+				<Container maxWidth="lg" sx={{ mb: "2em" }}>
 					<Grid container spacing={5}>
 						<Grid item xs={12} sm={4}>
 							<Stack direction="column" spacing={2}>
@@ -182,29 +173,44 @@ export default function Footer() {
 						</Grid>
 					</Grid>
 				</Container>
-				<Stack direction="row" spacing={2}>
+				<Stack direction="row" spacing={2} sx={{ mt: "4em", bottom: 0 }}>
 					{/* <img  src={gp} alt="google play"></img>
 					<img src={ap} alt="app store"></img> */}
-					<Box component="img" src={gp} alt="google play"></Box>
-					<Box component="img" src={ap} alt="app store"></Box>
-					<Box>MOBIKASA VENTURES LLP</Box>
-					<Box sx={{ display: "flex", flexDirection: "row-reverse" }}>
-						© 2022, All Rights Reserved.
+					<Box
+						component="img"
+						src={gp}
+						alt="google play"
+						sx={{ width: "10%", height: "10%" }}
+					/>
+					<Box
+						component="img"
+						src={ap}
+						alt="app store"
+						sx={{ width: "10%", height: "10%" }}
+					/>
+					<Typography sx={{ alignSelf: "center" }}>
+						MOBIKASA VENTURES LLP
+					</Typography>
+					<Box
+						sx={{
+							display: "flex",
+							flexDirection: "row-reverse",
+							flexGrow: 1,
+						}}
+					>
+						<Dropdown>
+							<Dropdown.Toggle id="dropdown-basic">India</Dropdown.Toggle>
+							<Dropdown.Menu>
+								<Dropdown.Item href="#/action-1">America</Dropdown.Item>
+								<Dropdown.Item href="#/action-2">Switzerland</Dropdown.Item>
+								<Dropdown.Item href="#/action-3">Auckland</Dropdown.Item>
+								<Dropdown.Item href="#/action-4">Canada</Dropdown.Item>
+							</Dropdown.Menu>
+						</Dropdown>
+						<Typography sx={{ alignSelf: "center", marginRight: "11em" }}>
+							© 2022, All Rights Reserved.
+						</Typography>
 					</Box>
-					<FormControl sx={{ m: 1, minWidth: 120 }}>
-						<Select
-							value={country}
-							onChange={handleChange}
-							inputProps={{ "aria-label": "Without label" }}
-						>
-							<MenuItem value="">
-								<em>India</em>
-							</MenuItem>
-							<MenuItem value={10}>America</MenuItem>
-							<MenuItem value={20}>London</MenuItem>
-							<MenuItem value={30}>Vietnam</MenuItem>
-						</Select>
-					</FormControl>
 				</Stack>
 			</Box>
 		</footer>

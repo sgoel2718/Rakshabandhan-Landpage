@@ -2,8 +2,7 @@ import * as React from "react";
 import Tabs from "@mui/material/Tabs";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
-import { CardActionArea, Stack } from "@mui/material";
+import { Stack } from "@mui/material";
 import "./Tabs.css";
 import rakhi from "./rakhi.jpg";
 import gc1 from "./gc1.jpg";
@@ -13,6 +12,7 @@ import sl1 from "./sl1.jfif";
 import pooja from "./pooja.jfif";
 import lamp from "./lamp.jfif";
 import urlis from "./urlis.jpg";
+import Avatar from "@mui/material/Avatar";
 
 export default function ScrollableTabsButtonAuto() {
 	const [value, setValue] = React.useState(0);
@@ -47,15 +47,14 @@ export default function ScrollableTabsButtonAuto() {
 						paddingLeft="50px"
 						paddingRight="50px"
 					>
-						<Card sx={{ width: "150px", height: "150px", borderRadius: "50%" }}>
-							<CardActionArea>
-								<CardMedia
-									component="img"
-									height="140"
-									image={rakhi}
-									alt="green iguana"
-								/>
-							</CardActionArea>
+						<Card sx={{ borderRadius: "50%" }}>
+							{/* <CardActionArea> */}
+							<Avatar
+								alt="Remy Sharp"
+								src={rakhi}
+								sx={{ width: 150, height: 150 }}
+							/>
+							{/* </CardActionArea> */}
 						</Card>
 						<h>RAKHI</h>
 					</Stack>
@@ -66,14 +65,13 @@ export default function ScrollableTabsButtonAuto() {
 						paddingRight="50px"
 					>
 						<Card sx={{ width: "150px", height: "150px", borderRadius: "50%" }}>
-							<CardMedia
-								component="img"
-								height="140"
-								image={gc1}
-								alt="green iguana"
+							<Avatar
+								alt="Remy Sharp"
+								src={gc1}
+								sx={{ width: 150, height: 150 }}
 							/>
 						</Card>
-						<p>ECO GANESHA</p>
+						<h>ECO GANESHA</h>
 					</Stack>
 					<Stack
 						direction="column"
@@ -82,16 +80,13 @@ export default function ScrollableTabsButtonAuto() {
 						paddingRight="50px"
 					>
 						<Card sx={{ width: "150px", height: "150px", borderRadius: "50%" }}>
-							<CardActionArea>
-								<CardMedia
-									component="img"
-									height="140"
-									image={hc1}
-									alt="green iguana"
-								/>
-							</CardActionArea>
+							<Avatar
+								alt="Remy Sharp"
+								src={hc1}
+								sx={{ width: 150, height: 150 }}
+							/>
 						</Card>
-						<p>CRYSTALS</p>
+						<h>CRYSTALS</h>
 					</Stack>
 					<Stack
 						direction="column"
@@ -100,16 +95,13 @@ export default function ScrollableTabsButtonAuto() {
 						paddingRight="50px"
 					>
 						<Card sx={{ width: "150px", height: "150px", borderRadius: "50%" }}>
-							<CardActionArea>
-								<CardMedia
-									component="img"
-									height="140"
-									image={hd1}
-									alt="green iguana"
-								/>
-							</CardActionArea>
+							<Avatar
+								alt="Remy Sharp"
+								src={hd1}
+								sx={{ width: 150, height: 150 }}
+							/>
 						</Card>
-						<p>HOME DECOR</p>
+						<h>HOME DECOR</h>
 					</Stack>
 					<Stack
 						direction="column"
@@ -118,16 +110,13 @@ export default function ScrollableTabsButtonAuto() {
 						paddingRight="50px"
 					>
 						<Card sx={{ width: "150px", height: "150px", borderRadius: "50%" }}>
-							<CardActionArea>
-								<CardMedia
-									component="img"
-									height="140"
-									image={sl1}
-									alt="green iguana"
-								/>
-							</CardActionArea>
+							<Avatar
+								alt="Remy Sharp"
+								src={sl1}
+								sx={{ width: 150, height: 150 }}
+							/>
 						</Card>
-						<p>SALT LAMPS</p>
+						<h>SALT LAMPS</h>
 					</Stack>
 					<Stack
 						direction="column"
@@ -136,16 +125,13 @@ export default function ScrollableTabsButtonAuto() {
 						paddingRight="50px"
 					>
 						<Card sx={{ width: "150px", height: "150px", borderRadius: "50%" }}>
-							<CardActionArea>
-								<CardMedia
-									component="img"
-									height="140"
-									image={lamp}
-									alt="green iguana"
-								/>
-							</CardActionArea>
+							<Avatar
+								alt="Remy Sharp"
+								src={lamp}
+								sx={{ width: 150, height: 150 }}
+							/>
 						</Card>
-						<p>LAMPS & LANTERNS</p>
+						<h>LAMPS & LANTERNS</h>
 					</Stack>
 					<Stack
 						direction="column"
@@ -154,16 +140,13 @@ export default function ScrollableTabsButtonAuto() {
 						paddingRight="50px"
 					>
 						<Card sx={{ width: "150px", height: "150px", borderRadius: "50%" }}>
-							<CardActionArea>
-								<CardMedia
-									component="img"
-									height="140"
-									image={pooja}
-									alt="green iguana"
-								/>
-							</CardActionArea>
+							<Avatar
+								alt="Remy Sharp"
+								src={pooja}
+								sx={{ width: 150, height: 150 }}
+							/>
 						</Card>
-						<p>POOJA DECOR</p>
+						<h>POOJA DECOR</h>
 					</Stack>
 					<Stack
 						direction="column"
@@ -172,16 +155,13 @@ export default function ScrollableTabsButtonAuto() {
 						paddingRight="50px"
 					>
 						<Card sx={{ width: "150px", height: "150px", borderRadius: "50%" }}>
-							<CardActionArea>
-								<CardMedia
-									component="img"
-									height="140"
-									image={urlis}
-									alt="green iguana"
-								/>
-							</CardActionArea>
+							<Avatar
+								alt="Remy Sharp"
+								src={urlis}
+								sx={{ width: 150, height: 150 }}
+							/>
 						</Card>
-						<p>URLIS</p>
+						<h>URLIS</h>
 					</Stack>
 				</Stack>
 			</Tabs>

@@ -8,8 +8,10 @@ function App() {
 		<div className="App">
 			<Navbar />
 			<img className="im" src={rakhi1} alt="rakhi" />
-			<h2>Discover the colourful world</h2>
-			<h1>Buy Yourself The Freedom</h1>
+			<h2>Thank You for being the most Wonderful brother</h2>
+			<h1>
+				<i>THANK YOU BHAIYA</i>
+			</h1>
 			<Cards />
 		</div>
 	);
